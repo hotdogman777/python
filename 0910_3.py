@@ -86,7 +86,7 @@
 # print("2조 발표자:", name2, "- 주제: ", ppt2)
 # print("3조 발표자:", name3, "- 주제: ", ppt3)
 
-year, month, day = input("년, 월, 일을 입력해주세요: ").split(",")
+year, month, day = input("년, 월, 일을 입력해주세요: ").split("-")
 
 hour, minute, second = input("시, 분, 초를 입력해주세요: ").split(":")
 
