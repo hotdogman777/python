@@ -147,9 +147,12 @@ kimbab = 2500
 samgak = 1500
 dosirak = 4000
 
-if money == food:
-    # food = input("김밥 삼각김밥 도시락").split
-    if money <= 2500:
-        print("삼각김밥 대령이요.")
-        if money > 2500:
-            print("돈이 맞지 않습니다!")
+# if food ==
+
+
+# if money == food:
+#     # food = input("김밥 삼각김밥 도시락").split
+#     if money <= 2500:
+#         print("삼각김밥 대령이요.")
+#         if money > 2500:
+#             print("돈이 맞지 않습니다!")
