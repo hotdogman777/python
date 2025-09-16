@@ -1,25 +1,25 @@
-# a = 10
-# a += 5
-# print(a)
+a = 10
+a += 5
+print(a)
 
-# a -= 4
-# print(a)
+a -= 4
+print(a)
 
-# a *= 3
-# print(a)
+a *= 3
+print(a)
 
-# a /= 11
-# print(a)
+a /= 11
+print(a)
 
-# a //= 2
-# print(a)
+a //= 2
+print(a)
 
-# a **= 200
-# print(a)
+a **= 200
+print(a)
 
-# a = 10
-# a %= 3
-# print(a)
+a = 10
+a %= 3
+print(a)
 
 
 # 30만원
