@@ -236,3 +236,32 @@ def sum_all(*numbers):
 
 
 print(sum_all(1, 2, 3))
+
+# 가변 키워드 인자(**kwargs)
+
+
+def print_info(**user):
+    # 키워드 인자를 딕셔너리로 받습니다.
+    print(f"user", user)
+    for key, value in user.items():
+        print(f"{key}: {value}")
+
+
+print_info(name="김철수", age=20, city="서울")
+
+
+def create_student(**info):
+    '''
+    학생 정보를 입력하세요
+    '''
+    student = {
+        "name": info.get("name", "이름 없음"),
+        "age": info.get("age", 20),
+        "grade": info.get("grade", 1),
+        "subjects": info.get("subjects", []),
+    }
+    return student
+
+
+student1 = create_student(name="김철수", subjects=["python"])
+print(student1)
