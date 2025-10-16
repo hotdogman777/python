@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_55ff56223bd971d1f29b31986485910e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_55ff56223bd971d1f29b31986485910e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_55ff56223bd971d1f29b31986485910e = L.map(
+                "map_55ff56223bd971d1f29b31986485910e",
+                {
+                    center: [35.5, 128.7],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f6a668d04f2267b5a893cb74241b1c6f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f6a668d04f2267b5a893cb74241b1c6f.addTo(map_55ff56223bd971d1f29b31986485910e);
+        
+    
+            var marker_f46dfcc7f749698cd6d7271a63eef8f8 = L.marker(
+                [36.568, 128.729],
+                {
+}
+            ).addTo(map_55ff56223bd971d1f29b31986485910e);
+        
+    
+            var icon_a83b90a19f380e84254b8e95a9cb6a51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c519cfa4ac401390a4e92fc942b1ae11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64ba06239aba5c25ce531e4d87229609 = $(`<div id="html_64ba06239aba5c25ce531e4d87229609" style="width: 100.0%; height: 100.0%;"><div style='font-size:16px; line-height:1.4;'><b>안동</b><br>강우량 값: 1002.4mm</div></div>`)[0];
+                popup_c519cfa4ac401390a4e92fc942b1ae11.setContent(html_64ba06239aba5c25ce531e4d87229609);
+            
+        
+
+        marker_f46dfcc7f749698cd6d7271a63eef8f8.bindPopup(popup_c519cfa4ac401390a4e92fc942b1ae11)
+        ;
+
+        
+    
+    
+            marker_f46dfcc7f749698cd6d7271a63eef8f8.bindTooltip(
+                `<div>
+                     안동 (1002.4mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f46dfcc7f749698cd6d7271a63eef8f8.setIcon(icon_a83b90a19f380e84254b8e95a9cb6a51);
+            
+    
+            var marker_517d896e81a33936eb3aa4971f77994d = L.marker(
+                [36.435, 129.057],
+                {
+}
+            ).addTo(map_55ff56223bd971d1f29b31986485910e);
+        
+    
+            var icon_d36e24ceac6e32930c27463406051bf5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99ccad858d8c6602cb0253d1fa3d2af0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca71f7f87aa198d25605c416ace53f38 = $(`<div id="html_ca71f7f87aa198d25605c416ace53f38" style="width: 100.0%; height: 100.0%;"><div style='font-size:16px; line-height:1.4;'><b>청송군</b><br>강우량 값: 967.2mm</div></div>`)[0];
+                popup_99ccad858d8c6602cb0253d1fa3d2af0.setContent(html_ca71f7f87aa198d25605c416ace53f38);
+            
+        
+
+        marker_517d896e81a33936eb3aa4971f77994d.bindPopup(popup_99ccad858d8c6602cb0253d1fa3d2af0)
+        ;
+
+        
+    
+    
+            marker_517d896e81a33936eb3aa4971f77994d.bindTooltip(
+                `<div>
+                     청송군 (967.2mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_517d896e81a33936eb3aa4971f77994d.setIcon(icon_d36e24ceac6e32930c27463406051bf5);
+            
+    
+            var marker_4998beb14f209e34c39c7226c9807467 = L.marker(
+                [36.352, 128.697],
+                {
+}
+            ).addTo(map_55ff56223bd971d1f29b31986485910e);
+        
+    
+            var icon_7a80985485916bbb5b94db19562e91a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fe13299674a9891da40f6ab3de76c41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_241827db4fb8a8042b54d60b94746110 = $(`<div id="html_241827db4fb8a8042b54d60b94746110" style="width: 100.0%; height: 100.0%;"><div style='font-size:16px; line-height:1.4;'><b>의성</b><br>강우량 값: 920.5mm</div></div>`)[0];
+                popup_8fe13299674a9891da40f6ab3de76c41.setContent(html_241827db4fb8a8042b54d60b94746110);
+            
+        
+
+        marker_4998beb14f209e34c39c7226c9807467.bindPopup(popup_8fe13299674a9891da40f6ab3de76c41)
+        ;
+
+        
+    
+    
+            marker_4998beb14f209e34c39c7226c9807467.bindTooltip(
+                `<div>
+                     의성 (920.5mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4998beb14f209e34c39c7226c9807467.setIcon(icon_7a80985485916bbb5b94db19562e91a4);
+            
+    
+            var marker_66de7fd9edea65a9f819cbad5d9c9251 = L.marker(
+                [36.654, 128.452],
+                {
+}
+            ).addTo(map_55ff56223bd971d1f29b31986485910e);
+        
+    
+            var icon_b846e3c7d16fc2680f0a2b9d40d8089f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a69f8080416839fdb48b247e815c0f64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2f1d296925fb4a05e30a54ca7485ab0 = $(`<div id="html_e2f1d296925fb4a05e30a54ca7485ab0" style="width: 100.0%; height: 100.0%;"><div style='font-size:16px; line-height:1.4;'><b>예천</b><br>강우량 값: 978.2mm</div></div>`)[0];
+                popup_a69f8080416839fdb48b247e815c0f64.setContent(html_e2f1d296925fb4a05e30a54ca7485ab0);
+            
+        
+
+        marker_66de7fd9edea65a9f819cbad5d9c9251.bindPopup(popup_a69f8080416839fdb48b247e815c0f64)
+        ;
+
+        
+    
+    
+            marker_66de7fd9edea65a9f819cbad5d9c9251.bindTooltip(
+                `<div>
+                     예천 (978.2mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66de7fd9edea65a9f819cbad5d9c9251.setIcon(icon_b846e3c7d16fc2680f0a2b9d40d8089f);
+            
+</script>
+</html>
